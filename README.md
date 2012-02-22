@@ -42,7 +42,7 @@ $theirHashToStore = Yii::app()->hasher->hashPassword($theirPassword);
 ```
 
 Authenticate an Existing Password:
-```PHP
+```
 $isValid = Yii::app()->hasher->checkPassword($theirPassword, $theirStoredHash);
 ```
 
