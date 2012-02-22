@@ -1,5 +1,5 @@
 Introduction
-------------
+---------
 Yii-Phpass is a simple wrapper for [Phpass 0.3](http://www.openwall.com/phpass/)
 in the [Yii Framework](http://www.yiiframework.com/)
 
@@ -12,16 +12,14 @@ in the [Yii Framework](http://www.yiiframework.com/)
 
 * Extract the release file under `protected/extensions/phpass`
 * Add a line to your configurationf ile to import the extension:
-~~~
-[php]
+```
 'import'=>array(
     ...
     'application.extensions.phpass.*',
 ),
-~~~
+```
 * Add to your main.php file within your Yii project, inside the component array:
-~~~
-[php]
+```php
 'components'=>array(
     'hasher'=>array (
         'class'=>'Phpass',
@@ -29,27 +27,24 @@ in the [Yii Framework](http://www.yiiframework.com/)
         'hashCostLog2'=>8,
     ),
 ),
-~~~
+```
 
 ###Usage
 
 Access the Phpass object:
-~~~
-[php]
+```php
 Yii::app()->hasher
-~~~
+```
 
 For a New Password:
-~~~
-[php]
+```php
 $theirHashToStore = Yii::app()->hasher->hashPassword($theirPassword);
-~~~
+```
 
 Authenticate an Existing Password:
-~~~
-[php]
+```php
 $isValid = Yii::app()->hasher->checkPassword($theirPassword, $theirStoredHash);
-~~~
+```
 
 License
 ---------
