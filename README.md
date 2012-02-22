@@ -23,7 +23,7 @@ in the [Yii Framework](http://www.yiiframework.com/)
 'components'=>array(
     'hasher'=>array (
         'class'=>'Phpass',
-        'hashPortable'=>true,
+        'hashPortable'=>false,
         'hashCostLog2'=>8,
     ),
 ),
