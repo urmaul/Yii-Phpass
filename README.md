@@ -19,7 +19,7 @@ in the [Yii Framework](http://www.yiiframework.com/)
 ),
 ```
 * Add to your main.php file within your Yii project, inside the component array:
-```php
+```
 'components'=>array(
     'hasher'=>array (
         'class'=>'Phpass',
@@ -32,17 +32,17 @@ in the [Yii Framework](http://www.yiiframework.com/)
 ###Usage
 
 Access the Phpass object:
-```php
+```
 Yii::app()->hasher
 ```
 
 For a New Password:
-```php
+```
 $theirHashToStore = Yii::app()->hasher->hashPassword($theirPassword);
 ```
 
 Authenticate an Existing Password:
-```php
+```PHP
 $isValid = Yii::app()->hasher->checkPassword($theirPassword, $theirStoredHash);
 ```
 
