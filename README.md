@@ -11,7 +11,7 @@ in the [Yii Framework](http://www.yiiframework.com/)
 ###Installation
 
 * Extract the release file under `protected/extensions/phpass`
-* Add a line to your configurationf ile to import the extension:
+* Add a line to your configuration file to import the extension:
 ```
 'import'=>array(
     ...
