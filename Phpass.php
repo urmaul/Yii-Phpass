@@ -15,9 +15,7 @@
 /**
  * PHPass is a Yii wrapper around PHPass 0.3
  *
- * Add a line to your main.php 'import': 'application.extensions.phpass.*',
- *
- * Then, add to your components for convenience:
+ * Add to your components for convenience:
  * 'hasher'=>array (
  *     'class'=>'Phpass',
  *     'hashPortable'=>true,
@@ -36,7 +34,7 @@
  *
  */
 
-require_once 'phpass-0.3/PasswordHash.php';
+require_once dirname(__FILE__) . '/phpass-0.3/PasswordHash.php';
 
 class Phpass extends CApplicationComponent
 {
